@@ -1,4 +1,4 @@
-# spms
+# spms Website
 
 ## Project setup
 ```
@@ -20,5 +20,7 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### TODO
+* Fill in text content
+* Embed challonge brackets
+* Make the website responsive for mobile phones
