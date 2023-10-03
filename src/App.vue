@@ -35,23 +35,8 @@
     </v-app-bar>
 
     <v-main class="px-6 mt-0 text-center" style="margin-top:100px">
-      <h1 id="home">SPMS Tetris Open Invitational</h1>
-      <h2>
-        Saturday, 4 November 2023 <br/>
-        1100-1700 GMT+8
-      </h2>
-      <p>Registration opens at 0900</p> <br/>
-      <h2>
-        Singapore Polytechnic <br/>
-        500 Dover Rd, Singapore 139651
-      </h2> <br/>
-
-      <h2>
-        Free for Singapore Polytechnic Students <br/>
-        $5 Entry Fee for non Singapore Polytechnic Students
-      </h2>
-
-      <h1 id="info">Tournament Info</h1>
+      <Home/>
+      <Info/>
       <h1 id="register">Register</h1>
       <h1 id="contacts">Contacts</h1>
       <h1 id="live bracket">Live Bracket</h1>
@@ -60,7 +45,7 @@
   </v-app>
 </template>
 
-<style scoped>
+<style>
   h1.anchor {
     display: block;
     position: relative;
@@ -74,9 +59,12 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import Home from "@/views/Home.vue";
+import Info from "@/views/Info.vue";
 
 export default Vue.extend({
   name: 'App',
+  components: {Info, Home},
 
   data: () => ({
     toolbar_items: ['Home', 'Info', 'Register', 'Contacts', 'Live Bracket', 'FAQs'],
