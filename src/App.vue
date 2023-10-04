@@ -34,13 +34,13 @@
 
     </v-app-bar>
 
-    <v-main class="px-6 mt-0 text-center" style="margin-top:100px">
+    <v-main class="px-6 mt-0 pb-16 text-center" style="margin-top:100px">
       <Home/>
       <Info/>
-      <h1 id="register">Register</h1>
-      <h1 id="contacts">Contacts</h1>
+      <Registration/>
+      <Contact/>
       <h1 id="live bracket">Live Bracket</h1>
-      <h1 id="info">FAQs</h1>
+      <h2>Live brackets will be available at a later date</h2>
     </v-main>
   </v-app>
 </template>
@@ -61,13 +61,15 @@
 import Vue from 'vue';
 import Home from "@/views/Home.vue";
 import Info from "@/views/Info.vue";
+import Registration from "@/views/Registration.vue";
+import Contact from "@/views/Contact.vue";
 
 export default Vue.extend({
   name: 'App',
-  components: {Info, Home},
+  components: {Contact, Registration, Info, Home},
 
   data: () => ({
-    toolbar_items: ['Home', 'Info', 'Register', 'Contacts', 'Live Bracket', 'FAQs'],
+    toolbar_items: ['Home', 'Info', 'Register', 'Contacts', 'Live Bracket'],
     selected: 'Home'
   }),
 });

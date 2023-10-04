@@ -1,13 +1,14 @@
 <template>
   <v-container fluid>
-    <h1 id="info">Tournament Info</h1>
+    <h1 id="info" class="anchor"/>
+    <h1>Tournament Info</h1>
     <h2>
       Matches will be played using TETR.IO's Tetra League ruleset <br/>
       Players will face off each other within their own division, with the win condition being dependent on the division <br/>
     </h2>
 
     <v-row class="d-flex justify-center">
-      <v-col cols="6">
+      <v-col lg="6" md="8">
         <v-simple-table style="background-color: #fffddf">
           <template v-slot:default>
             <thead>
@@ -50,21 +51,18 @@
       Most liked post <br/>
       Most referred person <br/>
     </h2>
-
-    <i>
-      *By signing up you agree to all clauses in our <a href="https://docs.google.com/document/d/1QiIgl84L9GUyFh7xrAhjrqf1GA_tLPPCNJJ-PJgLlis/edit?usp=sharing" target="_blank">Tournament Document</a>
-    </i>
   </v-container>
 </template>
 
 <script>
 import Vue from "vue";
-export default {
+
+export default Vue.extend({
   name: "Info",
   data() {
     return {
       brackets: [['Gold',3,3,5], ['Platinum',3,5,7], ['Diamond',5,7,9]]
     }
   }
-}
+})
 </script>
