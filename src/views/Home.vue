@@ -1,13 +1,13 @@
 <template>
-  <v-container fluid >
+  <v-container fluid>
     <h1 id="home" class="anchor"></h1>
     <div style="padding-top: 10%">
       <h1 style="font-size: 80px">SP Tetris Open Invitational</h1>
       <h2>
         Saturday, 4 November 2023 <br/>
-        1100-1700 GMT+8
+        1100-1800 GMT+8
       </h2>
-      <h2>Registration opens at 0900</h2> <br/>
+      <h2>Registration opens at 0930</h2> <br/>
       <h2>
         Singapore Polytechnic <br/>
         500 Dover Rd, Singapore 139651

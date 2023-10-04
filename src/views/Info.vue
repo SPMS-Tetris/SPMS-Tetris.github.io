@@ -11,7 +11,7 @@
       <v-col lg="8" md="10">
         <v-simple-table class="my-12" style="background-color: #fffddf;">
           <template v-slot:default>
-            <thead style="background-color: #fffdd0">
+            <thead style="background-color: #fffdd0;">
             <tr>
               <th class="text-left"></th>
               <th> <h2 class="text-left bold font-weight-black" style="color: black">&lt;Top 8</h2> </th>
@@ -26,7 +26,7 @@
                 v-for="items in brackets"
                 :key="items[0]"
             >
-              <td class="d-flex align-center"> <h2 class="bold"> {{items[0]}} </h2> </td>
+              <td> <h2 class="bold"> {{items[0]}} </h2> </td>
               <td
                   v-for="(ft, index) in items.slice(1)"
                   :key="index"

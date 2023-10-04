@@ -1,5 +1,5 @@
 <template>
-  <v-app style="background-color: #fffddf">
+  <v-app style="background-color: #fffddf;">
     <v-app-bar
       app
       color="#fffdd0"
@@ -70,10 +70,10 @@
     <v-main class="px-6 mt-0 pb-16 text-center" style="margin-top:100px">
       <Home ref="home-component" style="height: 100vh;"/>
       <Info style="margin-bottom: 96px"/>
+      <Schedule style="margin-bottom: 96px"/>
       <Registration style="margin-bottom: 96px"/>
       <Contact style="margin-bottom: 96px"/>
-      <h1 id="live bracket">Live Bracket</h1>
-      <h2 style="margin-bottom: 96px">Live brackets will be available at a later date</h2>
+      <Brackets style="margin-bottom: 96px"/>
     </v-main>
   </v-app>
 </template>
@@ -90,6 +90,11 @@
   }
 
   @font-face {
+    font-family: 'dreamwood';
+    src: url("../public/fonts/Dreamwood.ttf");
+  }
+
+  @font-face {
     font-family: 'quicksand'; /*a name to be used later*/
     src: url('../public/fonts/Quicksand.ttf'); /*URL to font*/
   }
@@ -101,7 +106,7 @@
 
   h1 {
     font-size: 48px;
-    font-family: quicksand;
+    font-family: dreamwood;
   }
 
   * {
@@ -111,6 +116,11 @@
   .bold {
     font-family: quicksand-bold;
   }
+
+  #app {
+    background: url('../src/assets/background.png') no-repeat center center fixed !important;
+    background-size: cover;
+  }
 </style>
 
 <script lang="ts">
@@ -119,13 +129,15 @@ import Home from "@/views/Home.vue";
 import Info from "@/views/Info.vue";
 import Registration from "@/views/Registration.vue";
 import Contact from "@/views/Contact.vue";
+import Brackets from "@/views/Brackets.vue";
+import Schedule from "@/views/Schedule.vue";
 
 export default Vue.extend({
   name: 'App',
-  components: {Contact, Registration, Info, Home},
+  components: {Schedule, Brackets, Contact, Registration, Info, Home},
 
   data: () => ({
-    toolbar_items: ['Home', 'Info', 'Register', 'Contacts', 'Live Bracket'],
+    toolbar_items: ['Home', 'Info', 'Schedule', 'Register', 'Contacts', 'Live Bracket'],
     selected: 'Home',
     windowWidth: window.innerWidth,
     drawer: false,
