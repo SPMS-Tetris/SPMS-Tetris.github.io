@@ -9,20 +9,20 @@
       We can also be contacted through our instagram, or email!
     </h2>
 
-    <v-row class="d-flex justify-center">
-      <v-col lg="1" md="3" sm="4">
-        <v-btn icon large href="https://discord.gg/PqCeyyyndg">
-          <v-icon large>$discord</v-icon>
+    <v-row class="mt-4">
+      <v-col sm="2" md="3" lg="4" xl="4"/>
+      <v-col xl="4" lg="4" md="6" sm="8">
+        <v-btn block outlined x-large href="https://discord.gg/PqCeyyyndg" target="_blank">
+          <v-icon x-large class="mr-6">$discord</v-icon>
+          Join our discord!
         </v-btn>
-      </v-col>
-      <v-col lg="1" md="3" sm="4">
-        <v-btn icon large href="https://www.instagram.com/sp_mindsports">
-          <v-icon large>$instagram</v-icon>
+        <v-btn block outlined x-large href="https://www.instagram.com/sp_mindsports" class="mt-4" target="_blank">
+          <v-icon class="mr-6" x-large>$instagram</v-icon>
+          @sp_mindsports
         </v-btn>
-      </v-col>
-      <v-col lg="1" md="3" sm="4">
-        <v-btn icon large href = "mailto: spmstetris@gmail.com">
-          <v-icon large>$gmail</v-icon>
+        <v-btn class="mt-4" block outlined x-large href = "mailto: spmstetris@gmail.com">
+          <v-icon class="mr-6" x-large>$gmail</v-icon>
+          spmstetris@gmail.com
         </v-btn>
       </v-col>
     </v-row>

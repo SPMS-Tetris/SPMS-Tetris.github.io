@@ -69,11 +69,11 @@
 
     <v-main class="px-6 mt-0 pb-16 text-center" style="margin-top:100px">
       <Home ref="home-component" style="height: 100vh;"/>
-      <Info/>
-      <Registration/>
-      <Contact/>
+      <Info style="margin-bottom: 96px"/>
+      <Registration style="margin-bottom: 96px"/>
+      <Contact style="margin-bottom: 96px"/>
       <h1 id="live bracket">Live Bracket</h1>
-      <h2>Live brackets will be available at a later date</h2>
+      <h2 style="margin-bottom: 96px">Live brackets will be available at a later date</h2>
     </v-main>
   </v-app>
 </template>
@@ -90,13 +90,26 @@
   }
 
   @font-face {
-    font-family: 'yoster'; /*a name to be used later*/
+    font-family: 'quicksand'; /*a name to be used later*/
     src: url('../public/fonts/Quicksand.ttf'); /*URL to font*/
+  }
+
+  @font-face {
+    font-family: 'quicksand-bold'; /*a name to be used later*/
+    src: url('../public/fonts/Quicksand-Bold.ttf'); /*URL to font*/
   }
 
   h1 {
     font-size: 48px;
-    font-family: yoster;
+    font-family: quicksand;
+  }
+
+  * {
+    font-family: quicksand;
+  }
+
+  .bold {
+    font-family: quicksand-bold;
   }
 </style>
 

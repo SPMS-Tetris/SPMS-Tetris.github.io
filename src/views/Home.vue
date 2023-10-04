@@ -7,7 +7,7 @@
         Saturday, 4 November 2023 <br/>
         1100-1700 GMT+8
       </h2>
-      <p>Registration opens at 0900</p> <br/>
+      <h2>Registration opens at 0900</h2> <br/>
       <h2>
         Singapore Polytechnic <br/>
         500 Dover Rd, Singapore 139651

@@ -8,15 +8,15 @@
     </h2>
 
     <v-row class="d-flex justify-center">
-      <v-col lg="6" md="8">
-        <v-simple-table style="background-color: #fffddf">
+      <v-col lg="8" md="10">
+        <v-simple-table class="my-12" style="background-color: #fffddf;">
           <template v-slot:default>
-            <thead>
+            <thead style="background-color: #fffdd0">
             <tr>
               <th class="text-left"></th>
-              <th class="text-left"> &lt;Top 8 </th>
-              <th class="text-left"> Top 8 </th>
-              <th class="text-left"> Finals </th>
+              <th> <h2 class="text-left bold font-weight-black" style="color: black">&lt;Top 8</h2> </th>
+              <th> <h2 class="text-left bold font-weight-black" style="color: black"> Top 8</h2> </th>
+              <th> <h2 class="text-left bold font-weight-black" style="color: black"> Finals </h2> </th>
             </tr>
             </thead>
 
@@ -26,12 +26,12 @@
                 v-for="items in brackets"
                 :key="items[0]"
             >
-              <td>{{items[0]}}</td>
+              <td class="d-flex align-center"> <h2 class="bold"> {{items[0]}} </h2> </td>
               <td
                   v-for="(ft, index) in items.slice(1)"
                   :key="index"
               >
-                First to {{ft}}
+                <h2> First to {{ft}} </h2>
               </td>
             </tr>
             </tbody>
@@ -42,9 +42,9 @@
 
     <h2>
       Prizes to be won within each division! <br/>
-      1st - $30 challenger voucher <br/>
-      2nd - $20 challenger voucher <br/>
-      3rd - $10 challenger voucher <br/>
+      <v-icon class="mr-2">$gold_medal</v-icon>1st - $30 challenger voucher <br/>
+      <v-icon class="mr-2">$silver_medal</v-icon>2nd - $20 challenger voucher <br/>
+      <v-icon class="mr-2">$bronze_medal</v-icon>3rd - $10 challenger voucher <br/>
       <br/>
       Additional $10 challenger voucher for each pre event awards to be won such as: <br/>
       Most viewed post <br/>
@@ -61,7 +61,8 @@ export default Vue.extend({
   name: "Info",
   data() {
     return {
-      brackets: [['Gold',3,3,5], ['Platinum',3,5,7], ['Diamond',5,7,9]]
+      brackets: [['Gold',3,3,5], ['Platinum',3,5,7], ['Diamond',5,7,9]],
+      colors: {'Gold': 'yellow'}
     }
   }
 })
