@@ -68,7 +68,7 @@
     </v-navigation-drawer>
 
     <v-main class="px-6 mt-0 pb-16 text-center" style="margin-top:100px">
-      <Home ref="home-component" style="height: 100vh;"/>
+      <Home ref="home-component" style="height: 100vh; margin-bottom: 96px"/>
       <Info style="margin-bottom: 96px"/>
       <Schedule style="margin-bottom: 96px"/>
       <Registration style="margin-bottom: 96px"/>

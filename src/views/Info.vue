@@ -9,7 +9,7 @@
 
     <v-row class="d-flex justify-center">
       <v-col lg="8" md="10">
-        <v-simple-table class="my-12" style="background-color: #fffddf;">
+        <v-simple-table class="my-12" style="background-color: #fffddf">
           <template v-slot:default>
             <thead style="background-color: #fffdd0;">
             <tr>
@@ -54,7 +54,7 @@
   </v-container>
 </template>
 
-<script>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -62,8 +62,19 @@ export default Vue.extend({
   data() {
     return {
       brackets: [['Gold',3,3,5], ['Platinum',3,5,7], ['Diamond',5,7,9]],
-      colors: {'Gold': 'yellow'}
+      colors: {'Gold': 'yellow'},
+      windowWidth: window.innerWidth
     }
-  }
+  },
+  computed: {
+    isMobile(): boolean {
+      return this.windowWidth <= 720
+    }
+  },
+  mounted() {
+    window.onresize = () => {
+      this.windowWidth = window.innerWidth;
+    }
+  },
 })
 </script>
