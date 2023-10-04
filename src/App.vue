@@ -6,7 +6,15 @@
       dark
       height="100px"
     >
-      <v-app-bar-nav-icon disabled="true" class="ml-4">
+      <v-app-bar-nav-icon
+          style="color: black"
+          v-if="isMobile"
+          @click.stop="drawer = !drawer"
+      />
+
+
+
+      <v-app-bar-title disabled class="ml-auto mr-4">
         <v-img
             alt="Vuetify Logo"
             contain
@@ -15,9 +23,9 @@
             width="100px"
             sizes="small"
         />
-      </v-app-bar-nav-icon>
+      </v-app-bar-title>
 
-      <v-layout row class="d-flex justify-center mr-6">
+      <v-layout row class="d-flex justify-center mr-6" v-if="!isMobile">
         <v-btn-toggle borderless rounded group mandatory v-model="selected">
           <v-btn
               :value="item"
@@ -34,8 +42,33 @@
 
     </v-app-bar>
 
+    <v-navigation-drawer
+        v-model="drawer"
+        app
+        clipped
+        color="#fffddf"
+        v-if="isMobile"
+    >
+      <v-list dense>
+        <v-list-item-group
+            v-model="selected"
+            color="primary"
+        >
+          <v-list-item
+              :href="`#${item.toLowerCase()}`"
+              v-for="(item, i) in toolbar_items"
+              :key="i"
+          >
+            <v-list-item-content>
+              <v-list-item-title v-text="item"></v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-main class="px-6 mt-0 pb-16 text-center" style="margin-top:100px">
-      <Home/>
+      <Home ref="home-component" style="height: 100vh;"/>
       <Info/>
       <Registration/>
       <Contact/>
@@ -55,6 +88,16 @@
   h2 {
     font-weight: normal;
   }
+
+  @font-face {
+    font-family: 'yoster'; /*a name to be used later*/
+    src: url('../public/fonts/Quicksand.ttf'); /*URL to font*/
+  }
+
+  h1 {
+    font-size: 48px;
+    font-family: yoster;
+  }
 </style>
 
 <script lang="ts">
@@ -70,7 +113,20 @@ export default Vue.extend({
 
   data: () => ({
     toolbar_items: ['Home', 'Info', 'Register', 'Contacts', 'Live Bracket'],
-    selected: 'Home'
+    selected: 'Home',
+    windowWidth: window.innerWidth,
+    drawer: false,
+    homeMarginBottom: 0,
   }),
+  computed: {
+    isMobile(): boolean {
+      return this.windowWidth <= 720
+    }
+  },
+  mounted() {
+    window.onresize = () => {
+      this.windowWidth = window.innerWidth;
+    }
+  },
 });
 </script>
