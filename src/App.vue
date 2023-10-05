@@ -26,7 +26,7 @@
       </v-app-bar-title>
 
       <v-layout row class="d-flex justify-center mr-6" v-if="!isMobile">
-        <v-btn-toggle borderless rounded group mandatory v-model="selected">
+        <v-btn-toggle borderless rounded group v-model="selected">
           <v-btn
               :value="item"
               text
@@ -118,13 +118,12 @@
   }
 
   #app {
-    background: url('../src/assets/background.png') no-repeat center center fixed !important;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
+    background: url('../src/assets/background.png') !important;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;}
   }
 
   @media screen and (max-device-width: 640px){
@@ -149,7 +148,7 @@ export default Vue.extend({
 
   data: () => ({
     toolbar_items: ['Home', 'Info', 'Schedule', 'Register', 'Contacts', 'Live Bracket'],
-    selected: 'Home',
+    selected: null,
     windowWidth: window.innerWidth,
     drawer: false,
     homeMarginBottom: 0,
