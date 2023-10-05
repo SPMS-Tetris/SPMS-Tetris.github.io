@@ -9,14 +9,14 @@
 
     <v-row class="d-flex justify-center">
       <v-col lg="8" md="10">
-        <v-simple-table class="my-12" style="background-color: #fffddf">
+        <v-simple-table class="my-12" style="background-color: #fffddf;">
           <template v-slot:default>
             <thead style="background-color: #fffdd0;">
             <tr>
               <th class="text-left"></th>
-              <th> <h2 class="text-left bold font-weight-black" style="color: black">&lt;Top 8</h2> </th>
-              <th> <h2 class="text-left bold font-weight-black" style="color: black"> Top 8</h2> </th>
-              <th> <h2 class="text-left bold font-weight-black" style="color: black"> Finals </h2> </th>
+              <th> <h2 class="text-left bold font-weight-black responsive" style="color: black">&lt;Top 8</h2> </th>
+              <th> <h2 class="text-left bold font-weight-black responsive" style="color: black"> Top 8</h2> </th>
+              <th> <h2 class="text-left bold font-weight-black responsive" style="color: black"> Finals </h2> </th>
             </tr>
             </thead>
 
@@ -26,12 +26,12 @@
                 v-for="items in brackets"
                 :key="items[0]"
             >
-              <td> <h2 class="bold"> {{items[0]}} </h2> </td>
+              <td> <h2 class="bold responsive"> {{items[0]}} </h2> </td>
               <td
                   v-for="(ft, index) in items.slice(1)"
                   :key="index"
               >
-                <h2> First to {{ft}} </h2>
+                <h2 class="responsive"> First to {{ft}} </h2>
               </td>
             </tr>
             </tbody>
@@ -53,6 +53,15 @@
     </h2>
   </v-container>
 </template>
+
+<style scoped>
+
+@media only screen and (max-width: 640px) {
+  h2.responsive {
+    font-size: 14px;
+  }
+}
+</style>
 
 <script lang="ts">
 import Vue from "vue";

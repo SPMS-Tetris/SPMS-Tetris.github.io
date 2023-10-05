@@ -31,6 +31,13 @@
   background-color: #fffdd0
 }
 
+
+@media only screen and (max-width: 640px) {
+  .bracket {
+    width: 100%;
+  }
+}
+
 </style>
 
 <script>
