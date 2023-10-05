@@ -19,7 +19,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### TODO
-* Embed challonge brackets
-* Make the website responsive for mobile phones

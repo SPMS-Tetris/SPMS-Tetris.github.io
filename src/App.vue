@@ -26,7 +26,7 @@
       </v-app-bar-title>
 
       <v-layout row class="d-flex justify-center mr-6" v-if="!isMobile">
-        <v-btn-toggle borderless rounded group v-model="selected">
+        <v-btn-group borderless rounded group>
           <v-btn
               :value="item"
               text
@@ -37,7 +37,7 @@
           >
             {{ item }}
           </v-btn>
-        </v-btn-toggle>
+        </v-btn-group>
       </v-layout>
 
     </v-app-bar>
@@ -50,20 +50,16 @@
         v-if="isMobile"
     >
       <v-list dense>
-        <v-list-item-group
-            v-model="selected"
-            color="primary"
-        >
           <v-list-item
               :href="`#${item.toLowerCase()}`"
               v-for="(item, i) in toolbar_items"
               :key="i"
+              @click="drawer=false"
           >
             <v-list-item-content>
               <v-list-item-title v-text="item"></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-        </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
 
@@ -148,7 +144,6 @@ export default Vue.extend({
 
   data: () => ({
     toolbar_items: ['Home', 'Info', 'Schedule', 'Register', 'Contacts', 'Live Bracket'],
-    selected: null,
     windowWidth: window.innerWidth,
     drawer: false,
     homeMarginBottom: 0,
