@@ -47,9 +47,9 @@
       <v-icon class="mr-2">$bronze_medal</v-icon>3rd - $10 challenger voucher <br/>
       <br/>
       Additional $10 challenger voucher for each pre event awards to be won such as: <br/>
-      Most viewed post <br/>
       Most liked post <br/>
       Most referred person <br/>
+      Additional awards to be announced on the day of the event <br/>
     </h2>
   </v-container>
 </template>
