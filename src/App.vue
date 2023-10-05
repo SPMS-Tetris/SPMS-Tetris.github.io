@@ -55,9 +55,10 @@
               v-for="(item, i) in toolbar_items"
               :key="i"
               @click="drawer=false"
+              class="mt-2"
           >
             <v-list-item-content>
-              <v-list-item-title v-text="item"></v-list-item-title>
+              <v-list-item-title style="font-size: 14px" v-text="item"></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
       </v-list>
