@@ -21,7 +21,7 @@
             </tr>
             <tr class="text-left">
               <td> <h2 class="bold"> 1100-1130 </h2> </td>
-              <td> <h2 class="bold text"> Introduction </h2> </td>
+              <td> <h2 class="bold"> Introduction </h2> </td>
             </tr>
             <tr class="text-left">
               <td> <h2 class="bold"> 1130-1400 </h2> </td>
