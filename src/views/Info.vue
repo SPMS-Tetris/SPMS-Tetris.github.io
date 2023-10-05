@@ -51,6 +51,8 @@
       Most referred person <br/>
       <br/>
       Additional awards to be announced on the day of the event <br/>
+      <br/>
+      Further information can be found in our <a href="https://docs.google.com/document/d/1QiIgl84L9GUyFh7xrAhjrqf1GA_tLPPCNJJ-PJgLlis/edit?usp=sharing" target="_blank">Tournament Document</a>
     </h2>
   </v-container>
 </template>
