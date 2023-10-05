@@ -119,7 +119,18 @@
 
   #app {
     background: url('../src/assets/background.png') no-repeat center center fixed !important;
-    background-size: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+  }
+
+  @media screen and (max-device-width: 640px){
+    body{
+      -webkit-text-size-adjust: 100%;
+    }
   }
 </style>
 
