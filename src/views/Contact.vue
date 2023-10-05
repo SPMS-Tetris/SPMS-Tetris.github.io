@@ -9,8 +9,7 @@
       We can also be contacted through our instagram, or email!
     </h2>
 
-    <v-row class="mt-4">
-      <v-col sm="2" md="3" lg="4" xl="4"/>
+    <v-row class="mt-4 d-flex justify-center">
       <v-col xl="4" lg="4" md="6" sm="8">
         <v-btn block outlined x-large href="https://discord.gg/PqCeyyyndg" target="_blank" style="background-color: #fffdd0">
           <v-icon x-large class="mr-6">$discord</v-icon>
