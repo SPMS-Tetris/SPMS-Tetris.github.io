@@ -43,6 +43,10 @@
               <td> <h2 class="bold"> 1700-1800 </h2> </td>
               <td> <h2 class="bold"> Finals </h2> </td>
             </tr>
+            <tr class="text-left">
+              <td> <h2 class="bold"> 1800-2100 </h2> </td>
+              <td> <h2 class="bold"> Post Event Party (Optional) </h2> </td>
+            </tr>
             </tbody>
           </template>
         </v-simple-table>
