@@ -11,6 +11,7 @@
           height="720"
           allowfullscreen
           class="stream"
+          style="height: 50vw; max-height: 720px"
       />
     </v-container>
   </v-container>
@@ -29,13 +30,13 @@
 
 @media only screen and (max-width: 480px) {
   .stream {
-    height: 300px;
+    max-height: 300px;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 640px) {
   .stream {
-    height: 400px;
+    max-height: 400px;
   }
 }
 
@@ -48,13 +49,13 @@
 
 @media screen and (min-width: 640px) and (max-width: 720px){
   .stream {
-    height: 480px;
+    max-height: 480px;
   }
 }
 
 @media screen and (min-width: 721px) and (max-width: 960px){
   .stream {
-    height: 560px;
+    max-height: 560px;
   }
 }
 
