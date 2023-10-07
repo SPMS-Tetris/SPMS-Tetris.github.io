@@ -32,12 +32,8 @@
               <td> <h2 class="bold"> Lunch Break </h2> </td>
             </tr>
             <tr class="text-left">
-              <td> <h2 class="bold"> 1500-1630 </h2> </td>
+              <td> <h2 class="bold"> 1500-1700 </h2> </td>
               <td> <h2 class="bold"> Semi-finals </h2> </td>
-            </tr>
-            <tr class="text-left">
-              <td> <h2 class="bold"> 1630-1700 </h2> </td>
-              <td> <h2 class="bold"> Buffer </h2> </td>
             </tr>
             <tr class="text-left">
               <td> <h2 class="bold"> 1700-1800 </h2> </td>
