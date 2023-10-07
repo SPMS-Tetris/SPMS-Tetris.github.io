@@ -146,14 +146,14 @@ export default Vue.extend({
   components: {Stream, Schedule, Brackets, Contact, Registration, Info, Home},
 
   data: () => ({
-    toolbar_items: ['Home', 'Info', 'Schedule', 'Register', 'Contacts', 'Live Bracket'],
+    toolbar_items: ['Home', 'Info', 'Schedule', 'Register', 'Contacts', 'Live Bracket', 'Stream'],
     windowWidth: window.innerWidth,
     drawer: false,
     homeMarginBottom: 0,
   }),
   computed: {
     isMobile(): boolean {
-      return this.windowWidth <= 720
+      return this.windowWidth <= 900
     }
   },
   mounted() {

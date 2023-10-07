@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <h1 id="live bracket" class="anchor"/>
+    <h1 id="stream" class="anchor"/>
     <h1>Stream</h1>
 
 
@@ -35,7 +35,7 @@
 
 @media only screen and (min-width: 481px) and (max-width: 640px) {
   .stream {
-    height: 480px;
+    height: 400px;
   }
 }
 
@@ -46,9 +46,15 @@
   }
 }
 
-@media screen and (min-width: 641px) and (max-width: 960px){
+@media screen and (min-width: 640px) and (max-width: 720px){
   .stream {
-    height: 640px;
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 960px){
+  .stream {
+    height: 560px;
   }
 }
 
