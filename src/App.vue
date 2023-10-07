@@ -71,6 +71,7 @@
       <Registration style="margin-bottom: 96px"/>
       <Contact style="margin-bottom: 96px"/>
       <Brackets style="margin-bottom: 96px"/>
+      <Stream style="margin-bottom: 96px"/>
     </v-main>
   </v-app>
 </template>
@@ -138,10 +139,11 @@ import Registration from "@/views/Registration.vue";
 import Contact from "@/views/Contact.vue";
 import Brackets from "@/views/Brackets.vue";
 import Schedule from "@/views/Schedule.vue";
+import Stream from "@/views/Stream.vue";
 
 export default Vue.extend({
   name: 'App',
-  components: {Schedule, Brackets, Contact, Registration, Info, Home},
+  components: {Stream, Schedule, Brackets, Contact, Registration, Info, Home},
 
   data: () => ({
     toolbar_items: ['Home', 'Info', 'Schedule', 'Register', 'Contacts', 'Live Bracket'],
