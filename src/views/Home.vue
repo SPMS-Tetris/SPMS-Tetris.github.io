@@ -5,7 +5,7 @@
       <h1 class="responsive">SP Tetris Open Invitational</h1>
       <h2>
         Saturday, 4 November 2023 <br/>
-        1100-1800 GMT+8
+        1100-1830 GMT+8
       </h2>
       <h2>Registration opens at 0930</h2> <br/>
       <h2>
