@@ -24,11 +24,11 @@
               <td> <h2 class="bold"> Introduction </h2> </td>
             </tr>
             <tr class="text-left">
-              <td> <h2 class="bold"> 1130-1400 </h2> </td>
+              <td> <h2 class="bold"> 1130-1330 </h2> </td>
               <td> <h2 class="bold"> Main Event </h2> </td>
             </tr>
             <tr class="text-left">
-              <td> <h2 class="bold"> 1400-1500 </h2> </td>
+              <td> <h2 class="bold"> 1330-1500 </h2> </td>
               <td> <h2 class="bold"> Lunch Break </h2> </td>
             </tr>
             <tr class="text-left">

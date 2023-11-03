@@ -42,11 +42,11 @@
 
     <h2>
       Prizes to be won within each division! <br/>
-      <v-icon class="mr-2">$gold_medal</v-icon>1st - $30 Challenger voucher <br/>
-      <v-icon class="mr-2">$silver_medal</v-icon>2nd - $20 Challenger voucher <br/>
-      <v-icon class="mr-2">$bronze_medal</v-icon>3rd - $10 Challenger voucher <br/>
+      <v-icon class="mr-2">$gold_medal</v-icon>1st - $30 NTUC voucher <br/>
+      <v-icon class="mr-2">$silver_medal</v-icon>2nd - $20 NTUC voucher <br/>
+      <v-icon class="mr-2">$bronze_medal</v-icon>3rd - $10 NTUC voucher <br/>
       <br/>
-      Additional $10 Challenger voucher for each pre event awards to be won such as: <br/>
+      Additional $10 NTUC voucher for each pre event awards to be won such as: <br/>
       Most liked post <br/>
       Most referred person <br/>
       <br/>
